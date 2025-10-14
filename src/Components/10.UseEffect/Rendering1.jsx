@@ -103,26 +103,26 @@
 
 // ----------------- 5️⃣ Cleanup function ------------------
 // --------- Kuch side effects ko cleanup karna padta hai (jaise event listeners, timers)
-import { React, useEffect } from "react";
+// import { React, useEffect } from "react";
 
-function Rendering() {
-  useEffect(() => {
-    const interval = setInterval(() => {
-      console.log("Tick");
-    }, 1000);
+// function Rendering() {
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       console.log("Tick");
+//     }, 1000);
 
-    return () => {
-      clearInterval(interval);
-      console.log("Interrval cleared");
-    };
-  }, []);
-  // Component unmount hote hi cleanup chalega
+//     return () => {
+//       clearInterval(interval);
+//       console.log("Interrval cleared");
+//     };
+//   }, []);
+//   // Component unmount hote hi cleanup chalega
 
-  return (
-    <>
-      <h1>Render component</h1>
-    </>
-  );
-}
+//   return (
+//     <>
+//       <h1>Render component</h1>
+//     </>
+//   );
+// }
 
-export default Rendering;
+// export default Rendering;

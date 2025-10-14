@@ -14,8 +14,9 @@ import Parent1 from "./Components/5.PassingFuncAsProps/Parent1";
 import Parent from "./Components/7.ContextAPI/component/Parent";
 import MyForm from "./Components/8.Form/MyForm";
 import Useref from "./Components/9.useRefUses/useRef";
-import Rendering from "./Components/10.UseEffect/Rendering1";
+// import Rendering from "./Components/10.UseEffect/Rendering1";
 import CleanUp from "./Components/10.UseEffect/CleanUp";
+import Memoization from "./Components/11.UseCallback/Memoization";
 
 function App() {
   return (
@@ -77,25 +78,31 @@ function App() {
 
         {/* ----------- React Form   ------------ */}
 
-        <hr />
+        {/* <hr />
         <h3>React Form</h3>
         <p>Controlled vs UnControlled Form</p>
         <MyForm></MyForm>
-        <hr />
+        <hr /> */}
 
         {/* --------------  useRef uses  -------------- */}
 
-        <hr />
+        {/* <hr />
         <h3>Use of useRef</h3>
         <Useref />
-        <hr />
+        <hr /> */}
 
         {/* --------------  useEffect   -------------- */}
-        <hr />
-        {/* <Rendering /> */}
+        {/* <hr />
+        <h3>effect Rendering check in console</h3>
+        <Rendering />
         <CleanUp />
-        <hr />
+        <hr /> */}
+
+        {/* -------------- useCallback   --------------- */}
       </center>
+      <hr />
+      <Memoization />
+      <hr />
     </>
   );
 }
