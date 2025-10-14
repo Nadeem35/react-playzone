@@ -77,18 +77,18 @@ function App() {
 
         {/* ----------- React Form   ------------ */}
 
-        {/* <hr />
+        <hr />
         <h3>React Form</h3>
         <p>Controlled vs UnControlled Form</p>
         <MyForm></MyForm>
-        <hr /> */}
+        <hr />
 
         {/* --------------  useRef uses  -------------- */}
 
-        {/* <hr />
+        <hr />
         <h3>Use of useRef</h3>
         <Useref />
-        <hr /> */}
+        <hr />
 
         {/* --------------  useEffect   -------------- */}
         <hr />
