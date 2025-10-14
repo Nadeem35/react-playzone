@@ -11,12 +11,13 @@ import ToggleState from "./Components/4.ClickEvents/ToggleState";
 import Form from "./Components/4.ClickEvents/Form";
 import Parent1 from "./Components/5.PassingFuncAsProps/Parent1";
 // import Parent from "./Components/6.PropDrilling/Parent";
-import Parent from "./Components/7.ContextAPI/component/Parent";
+// import Parent from "./Components/7.ContextAPI/component/Parent";
 import MyForm from "./Components/8.Form/MyForm";
 import Useref from "./Components/9.useRefUses/useRef";
 // import Rendering from "./Components/10.UseEffect/Rendering1";
 import CleanUp from "./Components/10.UseEffect/CleanUp";
 import Memoization from "./Components/11.UseCallback/Memoization";
+import Parent from "./Components/11.UseCallback/Parent";
 
 function App() {
   return (
@@ -101,7 +102,8 @@ function App() {
         {/* -------------- useCallback   --------------- */}
       </center>
       <hr />
-      <Memoization />
+      {/* <Memoization /> */}
+      <Parent />
       <hr />
     </>
   );

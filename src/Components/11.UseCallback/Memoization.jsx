@@ -23,7 +23,7 @@
 //   const [count, setCount] = useState(0);
 
 //   const increment = useCallback(() => setCount((c) => c + 1), []);
-
+////--- Agar increment bina useCallback ke hota, har render me new function banta, aur child component re-render hota.
 //   function anotherIncr() {
 //     setCount(count + 1);
 //   }
