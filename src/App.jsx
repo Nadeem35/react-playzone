@@ -19,6 +19,7 @@ import CleanUp from "./Components/10.UseEffect/CleanUp";
 import Memoization from "./Components/11.UseCallback/Memoization";
 import Parent from "./Components/11.UseCallback/Parent";
 import Memo from "./Components/12.UseMemo/Memo";
+import AppRoute from "./Components/14.Router/AppRoute";
 
 function App() {
   return (
@@ -107,9 +108,13 @@ function App() {
       <hr /> */}
       </center>
       {/* -------------- useMemo ------------- */}
+      {/* <hr />
+      <Memo />
+      <hr /> */}
+      {/* ------------  Router  ------------ */}
 
       <hr />
-      <Memo />
+      <AppRoute />
       <hr />
     </>
   );
