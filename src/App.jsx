@@ -18,6 +18,7 @@ import Useref from "./Components/9.useRefUses/useRef";
 import CleanUp from "./Components/10.UseEffect/CleanUp";
 import Memoization from "./Components/11.UseCallback/Memoization";
 import Parent from "./Components/11.UseCallback/Parent";
+import Memo from "./Components/12.UseMemo/Memo";
 
 function App() {
   return (
@@ -100,10 +101,15 @@ function App() {
         <hr /> */}
 
         {/* -------------- useCallback   --------------- */}
-      </center>
-      <hr />
-      {/* <Memoization /> */}
+        {/* <hr />
+      <Memoization />
       <Parent />
+      <hr /> */}
+      </center>
+      {/* -------------- useMemo ------------- */}
+
+      <hr />
+      <Memo />
       <hr />
     </>
   );
