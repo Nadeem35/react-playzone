@@ -13,7 +13,6 @@ import College3 from "./College3";
 const AppRoute = () => {
   return (
     <>
-      {/* <BrowserRouter> */}
       <BrowserRouter basename="/react-playzone/">
         <Navbar />
         <Routes>
@@ -21,6 +20,7 @@ const AppRoute = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
+
           {/* -------------- Nested routing ----------- */}
 
           <Route path="/college" element={<College />}>
