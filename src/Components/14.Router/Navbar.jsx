@@ -40,6 +40,12 @@ const Navbar = () => {
                 Service
               </Link>
             </li>
+
+            <li className="nav-item">
+              <Link className="nav-link active" to="/college">
+                College
+              </Link>
+            </li>
           </ul>
 
           <form className="d-flex" role="search">
@@ -52,6 +58,7 @@ const Navbar = () => {
             <button className="btn btn-outline-success" type="submit">
               Search
             </button>
+            
           </form>
         </div>
       </div>

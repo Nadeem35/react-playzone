@@ -20,6 +20,7 @@ import Memoization from "./Components/11.UseCallback/Memoization";
 import Parent from "./Components/11.UseCallback/Parent";
 import Memo from "./Components/12.UseMemo/Memo";
 import AppRoute from "./Components/14.Router/AppRoute";
+import LinkRoute from "./Components/14.Router/LinkRoute/LinkRoute";
 
 function App() {
   return (
@@ -106,15 +107,16 @@ function App() {
       <Memoization />
       <Parent />
       <hr /> */}
-      </center>
-      {/* -------------- useMemo ------------- */}
-      {/* <hr />
+        {/* -------------- useMemo ------------- */}
+        {/* <hr />
       <Memo />
       <hr /> */}
-      {/* ------------  Router  ------------ */}
+        {/* ------------  Router  ------------ */}
+      </center>
 
       <hr />
       <AppRoute />
+      {/* <LinkRoute /> */}
       <hr />
     </>
   );
