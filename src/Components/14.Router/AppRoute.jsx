@@ -9,6 +9,7 @@ import College from "./College";
 import College2 from "./College2";
 import College1 from "./College1";
 import College3 from "./College3";
+import NavBar from "./LinkRoute/NavBar";
 
 const AppRoute = () => {
   return (
@@ -17,9 +18,11 @@ const AppRoute = () => {
         <Navbar />
         <Routes>
           {/* default home page */}
+          <Route element={<NavBar />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
+          {/* </Route> */}
 
           {/* -------------- Nested routing ----------- */}
 
