@@ -15,19 +15,27 @@ const AppRoute = () => {
   return (
     <>
       <BrowserRouter basename="/react-playzone/">
-        <Navbar />
         <Routes>
+          {/* ------ its for route layout ----- */}
           {/* default home page */}
-          <Route element={<NavBar />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/service" element={<Service />} />
-          {/* </Route> */}
+          <Route element={<Navbar />}>
+            <Route path="/" element={<Home />} />
 
-          {/* -------------- Nested routing ----------- */}
+            <Route path="in">
+              <Route path="/in/user">
+                {/* ----- 👆 here '/user' use for prefix name --- */}
+                <Route path="/in/user/about" element={<About />} />
+                {/* ----- 👆 here '/user' use for prefix name --- */}
+                <Route path="/in/user/service" element={<Service />} />
+                {/* ----- 👆 here '/user' use for prefix name --- */}
+              </Route>
+            </Route>
+          </Route>
+          {/* --------- 👆 <Route element={<Navbar />}> use for Nested routing ------- */}
 
           <Route path="/college" element={<College />}>
-            <Route path="college1" element={<College1 />} />
+            <Route index element={<College1 />} />{" "}
+            {/* ----- here index is used for auto select this page ---- */}
             <Route path="college2" element={<College2 />} />
             <Route path="college3" element={<College3 />} />
           </Route>
