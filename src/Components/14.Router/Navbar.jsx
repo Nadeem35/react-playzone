@@ -5,10 +5,11 @@ const Navbar = () => {
   return (
     <div>
       {/*----  This div using for outlet (layout route)  ----*/}{" "}
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-info bg-tertiary">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            Navbar
+            {/* Navbar */}
+            <img src="./nav_logo.png" style={{ width: "50px" }} alt="logo" />
           </Link>
 
           <button
@@ -48,7 +49,7 @@ const Navbar = () => {
 
               <li className="nav-item">
                 <Link className="nav-link active" to="/college">
-                  College
+                  <b>College</b>
                 </Link>
               </li>
             </ul>
