@@ -10,16 +10,25 @@ import College2 from "./College2";
 import College1 from "./College1";
 import College3 from "./College3";
 import NavBar from "./LinkRoute/NavBar";
+import UserList from "./UserList";
+import UserDetailPage from "./UserDetailPage";
 
 const AppRoute = () => {
   return (
     <>
       <BrowserRouter basename="/react-playzone/">
         <Routes>
-          {/* ------ its for route layout ----- */}
+          {/* ------ 👇 its for route layout ----- */}
           {/* default home page */}
           <Route element={<Navbar />}>
+            {/*------- 👆 this page is use for dynamic page routing  -----*/}
             <Route path="/" element={<Home />} />
+            {/* ...... 👇 Its use for dynamic page URL ...... */}
+            <Route path="/users" element={<UserList />} />
+            <Route path="/users/:id" element={<UserDetailPage />} />
+            {/* ..... 👆 Its use for dynamic page URL ..... */}
+
+            {/*------- 👆 this page is use for dynamic page routing  -----*/}
 
             <Route path="in">
               <Route path="/in/user">
@@ -42,7 +51,7 @@ const AppRoute = () => {
 
           {/* ================== */}
           {/* ------ Landing when page not found at any specific URL -------- */}
-          {/* <Route path="/*" element={<PageNotFound />} /> */}
+          <Route path="/*" element={<PageNotFound />} />
           {/* --------  If page not found then land on any specific page  -------- */}
           {/* <Route path="/*" element={<Navigate to="/" />} /> */}
         </Routes>
