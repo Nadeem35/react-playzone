@@ -13,9 +13,9 @@ const UserDetailPage = () => {
         User id is : {id} {name}
       </h3>
 
-      <h4>
-        <Link to="/users">Go Back</Link>
-      </h4>
+      <h5>
+        <Link to="/users"> 🔙 Go Back</Link>
+      </h5>
     </>
   );
 };
