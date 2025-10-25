@@ -13,11 +13,11 @@ function Parent() {
   const handleClick = () => {
     console.log("Button clicked!");
   };
-
   console.log("Parent rendered!");
 
   return (
     <>
+      <h3>Parent</h3>
       <h2>Count: {count}</h2>
       <button onClick={() => setCount(count + 1)}>Increase</button>
       <Child onClick={handleClick} />

@@ -12,6 +12,7 @@ function MapMethod() {
 
   return (
     <>
+      <h2>This is Map Methods </h2>
       <OtherMapPage arrProp={arr}></OtherMapPage>
 
       <div style={{ display: "flex", gap: "50px" }}>

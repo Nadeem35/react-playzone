@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
-import Welcome from "./Components/Welcome";
-import { Funct1, Funct2 } from "./Components/ZunoFun";
-import MapMethod from "./Components/MapMethod";
-import InlineRendring from "./Components/InlineRendring";
+import Welcome from "./Components/0.Basics/1.Welcome";
+import { Funct1, Funct2 } from "./Components/0.Basics/1.ZunoFun";
+import MapMethod from "./Components/0.Basics/MapMethod";
+import InlineRendring from "./Components/0.Basics/InlineRendring";
 import LogInLogOut from "./Components/1.ConditionRendering/LogInLogOut";
 import Simple from "./Components/1.ConditionRendering/Simple-1";
 // import Parent1 from "./Components/2.Props/Parent1";
@@ -39,7 +39,7 @@ function App() {
         <hr /> */}
         {/* -------- Inline Rendering using map() ------ */}
         {/* <hr />
-        <InlineRendring></InlineRendring>
+        <InlineRendring />
         <hr /> */}
 
         {/* -----------  Conditional rendering  ------------ */}
@@ -53,9 +53,9 @@ function App() {
         <hr /> */}
 
         {/* -------- Passing children -------- */}
-        {/* <hr />
+        <hr />
         <Parent />
-        <hr /> */}
+        <hr />
 
         {/* -------- Passing children -------- */}
         {/* <hr />
@@ -114,10 +114,10 @@ function App() {
         {/* ------------  Router  ------------ */}
       </center>
 
-      <hr />
+      {/* <hr />
       <AppRoute />
-      {/* <LinkRoute /> */}
-      <hr />
+      <LinkRoute />
+      <hr /> */}
     </>
   );
 }
