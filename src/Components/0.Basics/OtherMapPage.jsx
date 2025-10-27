@@ -5,7 +5,7 @@ function OtherMapPage({ arrProp }) {
     <>
       <p>
         We can't use join inside the map because map returns new array while
-        join convert whole array into sinle string
+        join converts the whole array into a single string.
       </p>
       <p>{arrProp.join(", ")}</p>
       <ul style={{ display: "flex", gap: "10px", listStyle: "none" }}>
