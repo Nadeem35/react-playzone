@@ -108,16 +108,16 @@ function App() {
       <Parent />
       <hr /> */}
         {/* -------------- useMemo ------------- */}
-        {/* <hr />
-      <Memo />
-      <hr /> */}
+        <hr />
+        <Memo />
+        <hr />
         {/* ------------  Router  ------------ */}
       </center>
 
-      {/* <hr />
+      <hr />
       <AppRoute />
       <LinkRoute />
-      <hr /> */}
+      <hr />
     </>
   );
 }
