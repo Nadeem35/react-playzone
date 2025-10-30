@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Welcome from "./Components/0.Basics/1.Welcome";
+import Zuno from "./Components/0.Basics/01.ZunoFun";
 import { Funct1, Funct2 } from "./Components/0.Basics/1.ZunoFun";
 import MapMethod from "./Components/0.Basics/MapMethod";
 import InlineRendring from "./Components/0.Basics/InlineRendring";
@@ -27,7 +28,8 @@ function App() {
     <>
       <center>
         {/* ----------  Class Component  ----------- */}
-        {/* <Welcome></Welcome> */}
+        <Welcome></Welcome>
+        <ZunoFun />
         {/* --------- Exportingn two functions at a time --------- */}
         {/* <hr />
         <Funct1></Funct1>
