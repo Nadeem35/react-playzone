@@ -26,8 +26,8 @@ function App() {
     <>
       <center>
         {/* ----------  Class Component  ----------- */}
-        {/* <Welcome></Welcome>
-        <ZunoFun /> */}
+        <Welcome></Welcome>
+        {/* <ZunoFun /> */}
         {/* --------- Exportingn two functions at a time --------- */}
         {/* <hr />
         <Funct1></Funct1>
@@ -53,9 +53,9 @@ function App() {
         <hr /> */}
 
         {/* -------- Passing children -------- */}
-        <hr />
+        {/* <hr />
         <Parent />
-        <hr />
+        <hr /> */}
 
         {/* -------- Passing children -------- */}
         {/* <hr />
@@ -108,15 +108,15 @@ function App() {
       <Parent />
       <hr /> */}
         {/* -------------- useMemo ------------- */}
-        <hr />
+        {/* <hr />
         <Memo />
-        <hr />
+        <hr /> */}
         {/* ------------  Router  ------------ */}
       </center>
 
       <hr />
-      <AppRoute />
-      <LinkRoute />
+      {/* <AppRoute /> */}
+      {/* <LinkRoute /> */}
       <hr />
     </>
   );
