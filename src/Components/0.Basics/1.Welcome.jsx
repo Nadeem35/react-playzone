@@ -1,4 +1,4 @@
-// import { Component } from "react";
+import { Component } from "react";
 
 const nadeem = {
   heading: {
@@ -24,22 +24,3 @@ class Welcome extends Component {
 export default Welcome;
 
 // ----------------------------
-
-import  { useRef } from 'react'
-
-function Welcome(params) {
-    const inputRef = useRef()
-    return(
-        <>
-            <h1>Focus on input field</h1>
-            
-            <input type="text" ref={inputRef} />
-            <input type="button" onClick={()=>inputRef.current.focus()} value="Submit" />    
-            
-        </>
-    )
-}
-
-
-export default Welcome;
-
