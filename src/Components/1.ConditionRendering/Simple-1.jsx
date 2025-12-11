@@ -5,12 +5,7 @@
 // function Simple() {
 //   const isStudent = true;
 
-//   return (
-//     <>
-//       {isStudent && <h1>Im Saifi Boy !</h1>}
-
-//     </>
-//   );
+//   return <>{isStudent && <h1>I'm Saifi Boy!</h1>}</>;
 // }
 
 // export default Simple;
@@ -20,7 +15,7 @@
 // import React from "react";
 
 // function Simple() {
-//   const isLogedIn = true
+//   const isLogedIn = true;
 
 //   return (
 //     <>{isLogedIn ? <h1>Welcome Back Bro !</h1> : <h1>LogIn kar yaar !</h1>}</>
@@ -43,7 +38,6 @@
 //     </>
 //   );
 // }
-
 // export default Simple;
 
 // -----------------  🟡 Example 5: Greeting Based on Time   ---------------------
@@ -80,28 +74,60 @@
 
 // export default Simple;
 
-// -------------  🟡 Example 7: Empty List Check   ----------------
-// import React from "react";
-// function Simple() {
-//   // const fruits = ["Grapes", "Banana", "Orange", "Papaya"];
-//   const fruits = [];
+// --------  🟡 Example 6.1: Age Check taking input from the user ---------
+
+// import React, { useState } from "react";
+
+// const SelfMap = () => {
+//   const [age, setAge] = useState("");
+
+//   const adult = age > 18;
 //   return (
 //     <>
-//       {fruits.length == 0 ? (
-//         <h1>
-//           No fruits available 🍽️ <br /> Please enter fruits...
-//         </h1>
-//       ) : (
-//         <ul>
-//           {fruits.map((item, index) => (
-//             <li key={index}>{item}</li>
-//           ))}
-//         </ul>
-//       )}
+//       <h1 className="font-bold ">Check you are voter or not !</h1>
+//       <input
+//         type="text"
+//         placeholder="Enter your age..."
+//         value={age}
+//         onChange={(e) => setAge(e.target.value)}
+//         className="border-2 rounded px-1"
+//       />
+//       <h1>
+//         {age === ""
+//           ? "Check your eligibility 🧐"
+//           : adult
+//           ? "Im eligible for vote 😎"
+//           : "You are not eligible 😥"}
+//       </h1>
 //     </>
 //   );
-// }
-// export default Simple;
+// };
+
+// export default SelfMap;
+
+// -------------  🟡 Example 7: Empty List Check   ----------------
+
+import React from "react";
+function Simple() {
+  // const fruits = ["Grapes", "Banana", "Orange", "Papaya"];
+  const fruits = [];
+  return (
+    <>
+      {fruits.length == 0 ? (
+        <h1>
+          No fruits available 🍽️ <br /> Please enter fruits...
+        </h1>
+      ) : (
+        <ul>
+          {fruits.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      )}
+    </>
+  );
+}
+export default Simple;
 
 // --------------  🟡 Example 8: Show/Hide Password  ----------------
 
@@ -224,35 +250,35 @@
 // export default Simple;
 
 // -------  Example 6: API Data Rendering (Loading/Error/Success) -------
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 
-function Simple() {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
+// function Simple() {
+//   const [data, setData] = useState(null);
+//   const [loading, setLoading] = useState(true);
+//   const [error, setError] = useState(false);
 
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/posts/16")
-      .then((res) => res.json())
-      .then((json) => {
-        setData(json);
-        setLoading(false);
-      })
-      .catch(() => {
-        setError(true);
-        setLoading(false);
-      });
-  }, []);
+//   useEffect(() => {
+//     fetch("https://jsonplaceholder.typicode.com/posts/16")
+//       .then((res) => res.json())
+//       .then((json) => {
+//         setData(json);
+//         setLoading(false);
+//       })
+//       .catch(() => {
+//         setError(true);
+//         setLoading(false);
+//       });
+//   }, []);
 
-  if (loading) return <p>Loading... ⏳</p>;
-  if (error) return <p>Error fetching data ❌</p>;
+//   if (loading) return <p>Loading... ⏳</p>;
+//   if (error) return <p>Error fetching data ❌</p>;
 
-  return (
-    <div>
-      <h2>{data.title}</h2>
-      <p>{data.body}</p>
-    </div>
-  );
-}
+//   return (
+//     <div>
+//       <h2>{data.title}</h2>
+//       <p>{data.body}</p>
+//     </div>
+//   );
+// }
 
-export default Simple;
+// export default Simple;

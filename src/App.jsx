@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Welcome from "./Components/0.Basics/1.Welcome";
+import { Funct1, Funct2 } from "./Components/0.Basics/2.ZunoFun.jsx";
 import MapMethod from "./Components/0.Basics/MapMethod";
 import InlineRendring from "./Components/0.Basics/InlineRendring";
 import LogInLogOut from "./Components/1.ConditionRendering/LogInLogOut";
@@ -20,88 +21,79 @@ import Parent from "./Components/11.UseCallback/Parent";
 import Memo from "./Components/12.UseMemo/Memo";
 import AppRoute from "./Components/14.Router/AppRoute";
 import LinkRoute from "./Components/14.Router/LinkRoute/LinkRoute";
+import Table1 from "./Components/0.Basics/Table1.jsx";
 
 function App() {
   return (
     <>
       <center>
         {/* ----------  Class Component  ----------- */}
-        <Welcome></Welcome>
-        {/* <ZunoFun /> */}
+        {/* <Welcome></Welcome> */}
         {/* --------- Exportingn two functions at a time --------- */}
         {/* <hr />
         <Funct1></Funct1>
         <Funct2></Funct2>
         <hr /> */}
-        {/* ----- Map Method ---- */}
-        {/* <hr />
-        <MapMethod></MapMethod>
-        <hr /> */}
+        {/* -------------------------------- */}
+        {/* <ZunoFun /> */}
+        {/*  <ZunoFun />  -- This is wrong method to import a function with function name */}
         {/* -------- Inline Rendering using map() ------ */}
         {/* <hr />
         <InlineRendring />
         <hr /> */}
-
-        {/* -----------  Conditional rendering  ------------ */}
+        {/* ----- Map Method ---- */}
         {/* <hr />
-        <Simple></Simple>
+        <MapMethod></MapMethod>
         <hr /> */}
-
+        {/* ----  Call Array data into table using map()  ----- */}
+        {/* <Table1 /> */}
+        {/* -----------  Conditional rendering  ------------ */}
+        <hr />
+        <Simple></Simple>
+        <hr />
         {/* -------- Passing props -------- */}
         {/* <hr />
         <Parent1></Parent1>
         <hr /> */}
-
         {/* -------- Passing children -------- */}
         {/* <hr />
         <Parent />
         <hr /> */}
-
         {/* -------- Passing children -------- */}
         {/* <hr />
         <ToggleState />
         <Form></Form>
         <hr /> */}
-
         {/* -------- Passing function as props -------- */}
         {/* <hr />
         <Parent1></Parent1>
         <hr /> */}
-
         {/* --------------  PropDrilling  -------------- */}
         {/* <hr />
         <Parent />
         <hr /> */}
-
         {/* ------------   ContextAPI   --------------- */}
-
         {/* <hr />
         <h3>ContextAPI</h3>
         <Parent />
         <hr /> */}
-
         {/* ----------- React Form   ------------ */}
-
         {/* <hr />
         <h3>React Form</h3>
         <p>Controlled vs UnControlled Form</p>
         <MyForm></MyForm>
         <hr /> */}
-
         {/* --------------  useRef uses  -------------- */}
-
         {/* <hr />
         <h3>Use of useRef</h3>
         <Useref />
         <hr /> */}
-
         {/* --------------  useEffect   -------------- */}
         {/* <hr />
         <h3>effect Rendering check in console</h3>
         <Rendering />
         <CleanUp />
         <hr /> */}
-
         {/* -------------- useCallback   --------------- */}
         {/* <hr />
       <Memoization />

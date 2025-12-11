@@ -1,6 +1,5 @@
 import OtherMapPage from "./OtherMapPage";
 
-// -----------------------------------------
 function MapMethod() {
   let arr = ["a", "b", "c", "d", "e", "f"];
 
