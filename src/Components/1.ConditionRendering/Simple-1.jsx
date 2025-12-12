@@ -78,7 +78,7 @@
 
 // import React, { useState } from "react";
 
-// const SelfMap = () => {
+// const Simple = () => {
 //   const [age, setAge] = useState("");
 
 //   const adult = age > 18;
@@ -103,35 +103,35 @@
 //   );
 // };
 
-// export default SelfMap;
+// export default Simple;
 
 // -------------  🟡 Example 7: Empty List Check   ----------------
 
-import React from "react";
-function Simple() {
-  // const fruits = ["Grapes", "Banana", "Orange", "Papaya"];
-  const fruits = [];
-  return (
-    <>
-      {fruits.length == 0 ? (
-        <h1>
-          No fruits available 🍽️ <br /> Please enter fruits...
-        </h1>
-      ) : (
-        <ul>
-          {fruits.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
-      )}
-    </>
-  );
-}
-export default Simple;
+// import React from "react";
+// function Simple() {
+//   // const fruits = ["Grapes", "Banana", "Orange", "Papaya"];
+//   const fruits = [];
+//   return (
+//     <>
+//       {fruits.length == 0 ? (
+//         <h1>
+//           No fruits available 🍽️ <br /> Please enter fruits...
+//         </h1>
+//       ) : (
+//         <ul>
+//           {fruits.map((item, index) => (
+//             <li key={index}>{item}</li>
+//           ))}
+//         </ul>
+//       )}
+//     </>
+//   );
+// }
+// export default Simple;
 
 // --------------  🟡 Example 8: Show/Hide Password  ----------------
 
-// import React, { useState } from "react";
+// import { useState } from "react";
 
 // function Simple() {
 //   const [show, setShow] = useState(false);
@@ -147,30 +147,59 @@ export default Simple;
 // }
 
 // export default Simple;
+// --------------  🟡 Example 8.1: Show/Hide Password  ----------------
+// import React, { useState } from "react";
+
+// const Simple = () => {
+//   const [show, setHide] = useState(true);
+//   return (
+//     <div>
+//       <input
+//         type={show ? "password" : "show"}
+//         placeholder="Enter your password..."
+//         className="border-2 rounded-bl-sm rounded-tl-sm px-0.5"
+//       />
+//       <button
+//         onClick={() => setHide(!show)}
+//         className="bg-gray-500 text-white border-2 border-gray-800 px-1 border-l-0 "
+//         style={{ backgroundColor: "gray" }}
+//       >
+//         {/* {show ? " Hide" : "Show"} */}
+//         {/* {show ? "🙈" : "👁️"} */}
+//         {/* {show ? "👁️‍🗨️" : "👁️"} */}
+//         <span className="material-icons" style={{ fontSize: "18px" }}>
+//           {show ? "visibility_off" : "visibility"}
+//         </span>
+//       </button>
+//     </div>
+//   );
+// };
+
+// export default Simple;
 
 // --------------  🟡 Example 8: Check even odd number  ----------------
 
-// import React, { useState } from "react";
-// function Simple() {
-//   const [num, setNum] = useState("");
+import React, { useState } from "react";
+function Simple() {
+  const [num, setNum] = useState("");
 
-//   console.log(num);
+  // console.log(num);
 
-//   return (
-//     <>
-//       <input
-//         type="num"
-//         value={num}
-//         onChange={(e) => setNum(e.target.value)}
-//         placeholder="Enter any number"
-//       />
+  return (
+    <>
+      <input
+        type="num"
+        value={num}
+        onChange={(e) => setNum(e.target.value)}
+        placeholder="Enter any number"
+      />
 
-//       {num && <h3>{num % 2 === 0 ? "Even number" : "Odd number"}</h3>}
-//     </>
-//   );
-// }
+      {num && <h3>{num % 2 === 0 ? "Even number" : "Odd number"}</h3>}
+    </>
+  );
+}
 
-// export default Simple;
+export default Simple;
 
 // -------------- 🔴 Example 4: check Age Eligibility ----------------
 
