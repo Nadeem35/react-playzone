@@ -179,27 +179,35 @@
 
 // --------------  🟡 Example 8: Check even odd number  ----------------
 
-import React, { useState } from "react";
-function Simple() {
-  const [num, setNum] = useState("");
+// import React, { useState } from "react";
+// function Simple() {
+//   const [num, setNum] = useState("");
 
-  // console.log(num);
+//   // console.log(num);
 
-  return (
-    <>
-      <input
-        type="num"
-        value={num}
-        onChange={(e) => setNum(e.target.value)}
-        placeholder="Enter any number"
-      />
+//   return (
+//     <>
+//       <h3 style={{ color: "black" }}>Check enterd number is even or odd.</h3>
+//       <input
+//         type="num"
+//         value={num}
+//         onChange={(e) => setNum(e.target.value)}
+//         placeholder="Enter any number..."
+//       />
 
-      {num && <h3>{num % 2 === 0 ? "Even number" : "Odd number"}</h3>}
-    </>
-  );
-}
+//       {/* {num && <h3>{num % 2 === 0 ? "Even number" : "Odd number"}</h3>} */}
+//       <h3 style={{ fontFamily: "cursive" }}>
+//         {num === ""
+//           ? "Enter any number"
+//           : Number(num) % 2 === 0
+//           ? "Even Number"
+//           : "Odd Number"}
+//       </h3>
+//     </>
+//   );
+// }
 
-export default Simple;
+// export default Simple;
 
 // -------------- 🔴 Example 4: check Age Eligibility ----------------
 
@@ -231,29 +239,32 @@ export default Simple;
 
 // ----------- 🔴 Example 4: Theme Switcher----------------
 
-// import React, { useState } from "react";
+import React, { useState } from "react";
 
-// function Simple() {
-//   const [dark, SetDark] = useState(true);
+function Simple() {
+  const [dark, SetDark] = useState(true);
+  const nadeem = {
+    theming: {
+      height: "200px",
+      width: "200px",
+      border: "2px solid red",
+      borderRadius: "10px",
+      background: dark ? "black" : "white",
+      color: dark ? "white" : "black",
+    },
+  };
 
-//   return (
-//     <div
-//       style={{
-//         background: dark ? "black" : "white",
-//         color: dark ? "white" : "black",
-//         height: "200px",
-//         width: "200px",
-//         border: "2px solid red",
-//         borderRadius:"10px"
-//       }}
-//     >
-//       <p>{dark ? "Dark Theme 🌙" : "Light Theme 🌞"}</p>
-//       <button onClick={() => SetDark(!dark)}>Toggle theme</button>
-//     </div>
-//   );
-// }
+  return (
+    <div style={nadeem.theming}>
+      <p style={{ color: dark ? "white" : "black" }}>
+        {dark ? "Dark Theme 🌙" : "Light Theme 🌞"}
+      </p>
+      <button onClick={() => SetDark(!dark)}>Toggle theme</button>
+    </div>
+  );
+}
 
-// export default Simple;
+export default Simple;
 
 // =============  🔹 3. Hard Level  ==============
 // ---------  Example 5: Role-based Dashboard  ----------
