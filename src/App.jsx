@@ -30,21 +30,22 @@ function App() {
         {/* ----------  Class Component  ----------- */}
         {/* <Welcome></Welcome> */}
         {/* --------- Exportingn two functions at a time --------- */}
-        <hr />
+        {/* <hr />
         <Funct1></Funct1>
         <Funct2></Funct2>
-        <hr />
+        <hr /> */}
         {/* -------------------------------- */}
         {/* <ZunoFun /> */}
-        {/*  <ZunoFun />  -- This is wrong method to import a function with function name */}
+        {/* <ZunoFun /> */}
+        {/* //  -- This is wrong method to import a function with function name */}
         {/* -------- Inline Rendering using map() ------ */}
         {/* <hr />
         <InlineRendring />
         <hr /> */}
         {/* ----- Map Method ---- */}
-        {/* <hr />
+        <hr />
         <MapMethod></MapMethod>
-        <hr /> */}
+        <hr />
         {/* ----  Call Array data into table using map()  ----- */}
         {/* <Table1 /> */}
         {/* -----------  Conditional rendering  ------------ */}
