@@ -143,39 +143,40 @@
 //         {show ? "Hide password" : "Show Password"}
 //       </button>
 //     </>
-//   );
+//   ); 
 // }
 
 // export default Simple;
+
 // --------------  🟡 Example 8.1: Show/Hide Password  ----------------
-// import React, { useState } from "react";
+import React, { useState } from "react";
 
-// const Simple = () => {
-//   const [show, setHide] = useState(true);
-//   return (
-//     <div>
-//       <input
-//         type={show ? "password" : "show"}
-//         placeholder="Enter your password..."
-//         className="border-2 rounded-bl-sm rounded-tl-sm px-0.5"
-//       />
-//       <button
-//         onClick={() => setHide(!show)}
-//         className="bg-gray-500 text-white border-2 border-gray-800 px-1 border-l-0 "
-//         style={{ backgroundColor: "gray" }}
-//       >
-//         {/* {show ? " Hide" : "Show"} */}
-//         {/* {show ? "🙈" : "👁️"} */}
-//         {/* {show ? "👁️‍🗨️" : "👁️"} */}
-//         <span className="material-icons" style={{ fontSize: "18px" }}>
-//           {show ? "visibility_off" : "visibility"}
-//         </span>
-//       </button>
-//     </div>
-//   );
-// };
+const Simple = () => {
+  const [show, setHide] = useState(true);
+  return (
+    <div>
+      <input
+        type={show ? "password" : "show"}
+        placeholder="Enter your password..."
+        className="border-2 rounded-bl-sm rounded-tl-sm px-0.5"
+      />
+      <button
+        onClick={() => setHide(!show)}
+        className="bg-gray-500 text-white border-2 border-gray-800 px-1 border-l-0 "
+        style={{ backgroundColor: "gray" }}
+      >
+        {/* {show ? " Hide" : "Show"} */}
+        {/* {show ? "🙈" : "👁️"} */}
+        {/* {show ? "👁️‍🗨️" : "👁️"} */}
+        <span className="material-icons" style={{ fontSize: "18px" }}>
+          {show ? "visibility_off" : "visibility"}
+        </span>
+      </button>
+    </div>
+  );
+};
 
-// export default Simple;
+export default Simple;
 
 // --------------  🟡 Example 8: Check even odd number  ----------------
 
@@ -239,32 +240,41 @@
 
 // ----------- 🔴 Example 4: Theme Switcher----------------
 
-import React, { useState } from "react";
+// import { useState } from "react";
 
-function Simple() {
-  const [dark, SetDark] = useState(true);
-  const nadeem = {
-    theming: {
-      height: "200px",
-      width: "200px",
-      border: "2px solid red",
-      borderRadius: "10px",
-      background: dark ? "black" : "white",
-      color: dark ? "white" : "black",
-    },
-  };
+// function Simple() {
+//   const [dark, SetDark] = useState(true);
+//   const nadeem = {
+//     theming: {
+//       height: "200px",
+//       width: "200px",
+//       border: "2px solid red",
+//       borderRadius: "10px",
+//       background: dark ? "black" : "white",
+//       color: dark ? "white" : "black",
+//     },
+//     btn: {
+//       borderRadius: "5px ",
+//       marginBottom: "30px",
+//     },
+//   };
 
-  return (
-    <div style={nadeem.theming}>
-      <p style={{ color: dark ? "white" : "black" }}>
-        {dark ? "Dark Theme 🌙" : "Light Theme 🌞"}
-      </p>
-      <button onClick={() => SetDark(!dark)}>Toggle theme</button>
-    </div>
-  );
-}
+//   return (
+//     <>
+//       <div style={nadeem.theming}>
+//         <p style={{ color: dark ? "white" : "black" }}>
+//           {dark ? "Light Theme 🌞" : "Dark Theme 🌙"}
+//         </p>
+//         <button onClick={() => SetDark(!dark)} style={nadeem.btn}>
+//           {/* Toggle theme */}
+//           {dark ? "Dark Theme 🌙" : "Light Theme 🌞"}
+//         </button>
+//       </div>
+//     </>
+//   );
+// }
 
-export default Simple;
+// export default Simple;
 
 // =============  🔹 3. Hard Level  ==============
 // ---------  Example 5: Role-based Dashboard  ----------

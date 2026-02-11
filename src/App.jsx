@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Welcome from "./Components/0.Basics/1.Welcome";
-import { Funct1, Funct2 } from "./Components/0.Basics/2.ZunoFun.jsx";
+import { Funct1, Funct2 } from "./Components/0.Basics/01.ZunoFun.jsx";
 import MapMethod from "./Components/0.Basics/MapMethod";
 import InlineRendring from "./Components/0.Basics/InlineRendring";
 import LogInLogOut from "./Components/1.ConditionRendering/LogInLogOut";
@@ -30,10 +30,10 @@ function App() {
         {/* ----------  Class Component  ----------- */}
         {/* <Welcome></Welcome> */}
         {/* --------- Exportingn two functions at a time --------- */}
-        {/* <hr />
+        <hr />
         <Funct1></Funct1>
         <Funct2></Funct2>
-        <hr /> */}
+        <hr />
         {/* -------------------------------- */}
         {/* <ZunoFun /> */}
         {/*  <ZunoFun />  -- This is wrong method to import a function with function name */}
@@ -48,9 +48,9 @@ function App() {
         {/* ----  Call Array data into table using map()  ----- */}
         {/* <Table1 /> */}
         {/* -----------  Conditional rendering  ------------ */}
-        <hr />
+        {/* <hr />
         <Simple></Simple>
-        <hr />
+        <hr /> */}
         {/* -------- Passing props -------- */}
         {/* <hr />
         <Parent1></Parent1>

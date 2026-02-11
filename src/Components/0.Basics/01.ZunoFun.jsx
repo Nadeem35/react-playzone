@@ -1,4 +1,4 @@
-function Funct1() {
+export function Funct1() {
   return (
     <>
       <h1>Im from the function-1</h1>
@@ -6,7 +6,7 @@ function Funct1() {
   );
 }
 
-function Funct2() {
+export function Funct2() {
   return (
     <>
       <h1>Im from the function-2</h1>
@@ -14,4 +14,4 @@ function Funct2() {
   );
 }
 
-export { Funct1, Funct2 };
+
