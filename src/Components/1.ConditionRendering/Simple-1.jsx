@@ -166,10 +166,10 @@ const Simple = () => {
         style={{ backgroundColor: "gray" }}
       >
         {/* {show ? " Hide" : "Show"} */}
-        {/* {show ? "🙈" : "👁️"} */}
         {/* {show ? "👁️‍🗨️" : "👁️"} */}
         <span className="material-icons" style={{ fontSize: "18px" }}>
-          {show ? "visibility_off" : "visibility"}
+          {/* {show ? "visibility_off" : "visibility"} */}
+          {show ? "🙈" : "👁️"}
         </span>
       </button>
     </div>

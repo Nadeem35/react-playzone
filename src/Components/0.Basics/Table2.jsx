@@ -5,6 +5,7 @@ const Table2 = ({ arrProp }) => {
     <>
       {
         <table border="1">
+          <caption>Table-1</caption>
           <thead>
             <tr>
               <th className="border-4 px-3">ID</th>

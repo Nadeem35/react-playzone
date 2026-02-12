@@ -43,15 +43,15 @@ function App() {
         <InlineRendring />
         <hr /> */}
         {/* ----- Map Method ---- */}
-        <hr />
+        {/* <hr />
         <MapMethod></MapMethod>
-        <hr />
+        <hr /> */}
         {/* ----  Call Array data into table using map()  ----- */}
         {/* <Table1 /> */}
         {/* -----------  Conditional rendering  ------------ */}
-        {/* <hr />
+        <hr />
         <Simple></Simple>
-        <hr /> */}
+        <hr />
         {/* -------- Passing props -------- */}
         {/* <hr />
         <Parent1></Parent1>
