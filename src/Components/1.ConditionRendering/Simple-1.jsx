@@ -1,14 +1,17 @@
 // ------------  🟢 Step 2: Simple if Condition (inside JSX)  ------------
 
-// import React from "react";
+import { useState } from "react"
 
 // function Simple() {
+
 //   const isStudent = true;
 
 //   return <>{isStudent && <h1>I'm Saifi Boy!</h1>}</>;
 // }
 
 // export default Simple;
+
+
 
 // ------------🟢 Step 3: Ternary Operator ----------------
 
@@ -23,6 +26,23 @@
 // }
 
 // export default Simple;
+
+//------------------
+function Simple() {
+
+  const [value, setValue] = useState()
+
+
+  return (
+    <>
+      {
+        value ? <h1>Saab Changa Si </h1> : <h1>Kuchh to gadhbadh hai re baba</h1>
+      }
+      <button onClick={() => setValue(value => !value)}>{value ? "😂" : "👿"}</button>
+    </>
+  )
+}
+export default Simple
 
 // -----------------  🟢 Step 4: Toggle with Button  -------------------
 
@@ -143,40 +163,40 @@
 //         {show ? "Hide password" : "Show Password"}
 //       </button>
 //     </>
-//   ); 
+//   );
 // }
 
 // export default Simple;
 
 // --------------  🟡 Example 8.1: Show/Hide Password  ----------------
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
-const Simple = () => {
-  const [show, setHide] = useState(true);
-  return (
-    <div>
-      <input
-        type={show ? "password" : "show"}
-        placeholder="Enter your password..."
-        className="border-2 rounded-bl-sm rounded-tl-sm px-0.5"
-      />
-      <button
-        onClick={() => setHide(!show)}
-        className="bg-gray-500 text-white border-2 border-gray-800 px-1 border-l-0 "
-        style={{ backgroundColor: "gray" }}
-      >
-        {/* {show ? " Hide" : "Show"} */}
-        {/* {show ? "👁️‍🗨️" : "👁️"} */}
-        <span className="material-icons" style={{ fontSize: "18px" }}>
-          {/* {show ? "visibility_off" : "visibility"} */}
-          {show ? "🙈" : "👁️"}
-        </span>
-      </button>
-    </div>
-  );
-};
+// const Simple = () => {
+//   const [show, setHide] = useState(true);
+//   return (
+//     <div>
+//       <input
+//         type={show ? "password" : "show"}
+//         placeholder="Enter your password..."
+//         className="border-2 rounded-bl-sm rounded-tl-sm px-0.5"
+//       />
+//       <button
+//         onClick={() => setHide(!show)}
+//         className="bg-gray-500 text-white border-2 border-gray-800 px-1 border-l-0 "
+//         style={{ backgroundColor: "gray" }}
+//       >
+//         {/* {show ? " Hide" : "Show"} */}
+//         {/* {show ? "👁️‍🗨️" : "👁️"} */}
+//         {/* {show ? "🙈" : "👁️"} */}
+//         <span className="material-icons" style={{ fontSize: "18px" }}>
+//           {show ? "visibility_off" : "visibility"}
+//         </span>
+//       </button>
+//     </div>
+//   );
+// };
 
-export default Simple;
+// export default Simple;
 
 // --------------  🟡 Example 8: Check even odd number  ----------------
 
