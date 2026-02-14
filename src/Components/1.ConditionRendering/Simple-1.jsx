@@ -60,27 +60,43 @@
 
 // -----------------  🟡 Example 5: Greeting Based on Time   ---------------------
 
+// function Simple() {
+//   const HRS = new Date().getDate();
+//   // const HRS = new Date().getMilliseconds();
+//   // const HRS = new Date().getMonth();
+//   // const HRS = new Date().getUTCHours()
+//   const isMorning = HRS < 12;
+
+//   return (
+//     <>
+//       <h3>{HRS}</h3>
+//       <h1>{isMorning ? "Good Morning 🌞" : "Good Evening 🌙"}</h1>
+//     </>
+//   );
+// }
+
+// export default Simple;
+
+// --------  🟡 Example 6: Age Check  ---------
+
+
 function Simple() {
-  const HRS = new Date().getDate();
-  // const HRS = new Date().getMilliseconds();
-  // const HRS = new Date().getMonth();
-  // const HRS = new Date().getUTCHours()
-  const isMorning = HRS < 12;
+
+  const Married = 5
 
   return (
     <>
-      <h3>{HRS}</h3>
-      <h1>{isMorning ? "Good Morning 🌞" : "Good Evening 🌙"}</h1>
+      {
+        Married <= 4 ? <h2>You are good person</h2> : <h2>Tharak</h2>
+      }
     </>
-  );
+  )
 }
 
-export default Simple;
-
-// --------  🟡 Example 6: Age Check  ---------
-// import React from "react";
+export default Simple
 
 // function Simple() {
+
 //   const age = 3;
 //   const check = age > 12;
 //   return (
