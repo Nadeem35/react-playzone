@@ -1,7 +1,5 @@
 // ------------  🟢 Step 2: Simple if Condition (inside JSX)  ------------
 
-import { useState } from "react"
-
 // function Simple() {
 
 //   const isStudent = true;
@@ -28,25 +26,25 @@ import { useState } from "react"
 // export default Simple;
 
 //------------------
-function Simple() {
+// function Simple() {
 
-  const [value, setValue] = useState()
+//   const [value, setValue] = useState()
 
 
-  return (
-    <>
-      {
-        value ? <h1>Saab Changa Si </h1> : <h1>Kuchh to gadhbadh hai re baba</h1>
-      }
-      <button onClick={() => setValue(value => !value)}>{value ? "😂" : "👿"}</button>
-    </>
-  )
-}
-export default Simple
+//   return (
+//     <>
+//       {
+//         value ? <h1>Saab Changa Si </h1> : <h1>Kuchh to gadhbadh hai re baba</h1>
+//       }
+//       <button onClick={() => setValue(value => !value)}>{value ? "😂" : "👿"}</button>
+//     </>
+//   )
+// }
+// export default Simple
 
 // -----------------  🟢 Step 4: Toggle with Button  -------------------
 
-// import React, { useState } from "react";
+// import { useState } from "react";
 
 // function Simple() {
 //   const [show, setShow] = useState(true);
@@ -62,22 +60,22 @@ export default Simple
 
 // -----------------  🟡 Example 5: Greeting Based on Time   ---------------------
 
-// function Simple() {
-//   const HRS = new Date().getDate();
-//   // const HRS = new Date().getMilliseconds();
-//   // const HRS = new Date().getMonth();
-//   // const HRS = new Date().getUTCHours()
-//   const isMorning = HRS < 12;
+function Simple() {
+  const HRS = new Date().getDate();
+  // const HRS = new Date().getMilliseconds();
+  // const HRS = new Date().getMonth();
+  // const HRS = new Date().getUTCHours()
+  const isMorning = HRS < 12;
 
-//   return (
-//     <>
-//       <h3>{HRS}</h3>
-//       <h1>{isMorning ? "Good Morning 🌞" : "Good Evening 🌙"}</h1>
-//     </>
-//   );
-// }
+  return (
+    <>
+      <h3>{HRS}</h3>
+      <h1>{isMorning ? "Good Morning 🌞" : "Good Evening 🌙"}</h1>
+    </>
+  );
+}
 
-// export default Simple;
+export default Simple;
 
 // --------  🟡 Example 6: Age Check  ---------
 // import React from "react";
