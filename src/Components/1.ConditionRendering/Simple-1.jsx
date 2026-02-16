@@ -79,58 +79,59 @@
 
 // --------  🟡 Example 6: Age Check  ---------
 
+import { useState } from "react"
 
-// function Simple() {
+function Simple() {
 
-//   const [Married, setMarried] = useState()
+  const [Married, setMarried] = useState("")
 
-//   return (
-//     <>
-//       <h3>Enter your age___ </h3>
-//       <input type="number"
-//         placeholder="Enter your age..."
-//         onChange={(e) => setMarried(e.target.value)}
-//       />
-//       {
-//         Married >= 18 ? <h2>You are eligible for vote.</h2> : <h2>Your are not adult</h2>
-//       }
-//     </>
-//   )
-// }
+  return (
+    <>
+      <h3>Enter your age___ </h3>
+      <input type="number"
+        placeholder="Enter your age..."
+        onChange={(e) => setMarried(e.target.value)}
+      />
+      {Married === "" ? <h3>Please enter any value </h3> :
+        Married >= 18 ? <h2>You are eligible for vote.</h2> : <h2>Your are not adult</h2>
+      }
+    </>
+  )
+}
 
-// export default Simple
+export default Simple
 
 
 // --------  🟡 Example 6.1: Age Check taking input from the user ---------
 
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
-const Simple = () => {
-  const [age, setAge] = useState("");
+// // const Simple = () => {
+//   const [age, setAge] = useState("");
 
-  const adult = age > 18;
-  return (
-    <>
-      <h3 className="font-bold ">Check you are voter or not !</h3>
-      <input
-        type="text"
-        placeholder="Enter your age..."
-        value={age}
-        onChange={(e) => setAge(e.target.value)}
-        className="border-2 rounded px-1 border-red-100 "
-      />
-      <h4>
-        {age === ""
-          ? "Check your eligibility 🧐"
-          : adult
-            ? "You eligible for vote 😎"
-            : "You are not eligible 😥"}
-      </h4>
-    </>
-  );
-};
+//   const adult = age > 18;
+//   return (
+//     <>
+//       <h3 className="font-bold ">Check you are voter or not !</h3>
+//       <input
+//         type="text"
+//         placeholder="Enter your age..."
+//         value={age}
+//         onChange={(e) => setAge(e.target.value)}
+//         className="border-2 rounded px-1 border-red-100"
+//       />
+//       <h4>
+//         {age === ""
+//           ? "Check your eligibility 🧐"
+//           : adult
+//             ? "You eligible for vote 😎"
+//             : "You are not eligible 😥"}
+//       </h4>
+//     </>
+//   );
+// };
 
-export default Simple;
+// export default Simple;
 
 // -------------  🟡 Example 7: Empty List Check   ----------------
 
