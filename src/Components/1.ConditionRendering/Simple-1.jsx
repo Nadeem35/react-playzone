@@ -1,5 +1,7 @@
 // ------------  🟢 Step 2: Simple if Condition (inside JSX)  ------------
 
+import { useState } from "react"
+
 // function Simple() {
 
 //   const isStudent = true;
@@ -79,27 +81,48 @@
 
 // --------  🟡 Example 6: Age Check  ---------
 
-import { useState } from "react"
-
 function Simple() {
 
-  const [Married, setMarried] = useState("")
+  const [pre, setPre] = useState("");
 
   return (
     <>
-      <h3>Enter your age___ </h3>
-      <input type="number"
-        placeholder="Enter your age..."
-        onChange={(e) => setMarried(e.target.value)}
-      />
-      {Married === "" ? <h3>Please enter any value </h3> :
-        Married >= 18 ? <h2>You are eligible for vote.</h2> : <h2>Your are not adult</h2>
+      <h2>Check your eligibility</h2>
+      {
+        <input type="number" placeholder="enter number"
+          onChange={(e) => setPre(e.target.value)}
+        />
       }
+      <h3>{pre === "" ? "Enter any number" : pre >= 18 ? "Voter" : "Not Voter"}</h3>
+      {/* <button>Cli</button> */}
     </>
   )
 }
-
 export default Simple
+
+// ---------------------------
+
+// import { useState } from "react"
+
+// function Simple() {
+
+//   const [Married, setMarried] = useState("")
+
+//   return (
+//     <>
+//       <h2>Enter your age___ </h2>
+//       <input type="number"
+//         placeholder="Enter your age..."
+//         onChange={(e) => setMarried(e.target.value)}
+//       />
+//       {Married === "" ? <h3>Please enter any value </h3> :
+//         Married >= 18 ? <h2>You are eligible for vote.</h2> : <h2>Your are not adult</h2>
+//       }
+//     </>
+//   )
+// }
+
+// export default Simple
 
 
 // --------  🟡 Example 6.1: Age Check taking input from the user ---------
