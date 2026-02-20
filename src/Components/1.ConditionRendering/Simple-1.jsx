@@ -1,6 +1,5 @@
 // ------------  🟢 Step 2: Simple if Condition (inside JSX)  ------------
 
-import { useState } from "react"
 
 // function Simple() {
 
@@ -81,6 +80,9 @@ import { useState } from "react"
 
 // --------  🟡 Example 6: Age Check  ---------
 
+
+import { useState } from "react"
+
 function Simple() {
 
   const [pre, setPre] = useState("");
@@ -93,8 +95,7 @@ function Simple() {
           onChange={(e) => setPre(e.target.value)}
         />
       }
-      <h3>{pre === "" ? "Enter any number" : pre >= 18 ? "Voter" : "Not Voter"}</h3>
-      {/* <button>Cli</button> */}
+      <h3>{pre === "" ? "Enter any number" : pre >= 18 ? "Voter 👍" : "Not Voter 😥"}</h3>
     </>
   )
 }
