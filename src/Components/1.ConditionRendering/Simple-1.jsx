@@ -1,11 +1,13 @@
 // ------------  🟢 Step 2: Simple if Condition (inside JSX)  ------------
 
+import { useState } from "react"
 
 // function Simple() {
 
 //   const isStudent = true;
 
 //   return <>{isStudent && <h1>I'm Saifi Boy!</h1>}</>;
+
 // }
 
 // export default Simple;
@@ -81,25 +83,25 @@
 // --------  🟡 Example 6: Age Check  ---------
 
 
-import { useState } from "react"
+// import { useState } from "react"
 
-function Simple() {
+// function Simple() {
 
-  const [pre, setPre] = useState("");
+//   const [value, setValue] = useState("");
 
-  return (
-    <>
-      <h2>Check your eligibility</h2>
-      {
-        <input type="number" placeholder="enter number"
-          onChange={(e) => setPre(e.target.value)}
-        />
-      }
-      <h3>{pre === "" ? "Enter any number" : pre >= 18 ? "Voter 👍" : "Not Voter 😥"}</h3>
-    </>
-  )
-}
-export default Simple
+//   return (
+//     <>
+//       <h2>Check your eligibility</h2>
+//       {
+//         <input type="number" placeholder="enter number"
+//           onChange={(e) => setValue(e.target.value)}
+//         />
+//       }
+//       <h3>{value == "" ? "Enter any number" : value >= 18 ? "You are Voter 👍" : "You are Not Voter 😥"}</h3>
+//     </>
+//   )
+// }
+// export default Simple;
 
 // ---------------------------
 
@@ -117,7 +119,7 @@ export default Simple
 //         onChange={(e) => setMarried(e.target.value)}
 //       />
 //       {Married === "" ? <h3>Please enter any value </h3> :
-//         Married >= 18 ? <h2>You are eligible for vote.</h2> : <h2>Your are not adult</h2>
+//         Married >= 21 ? <h2>You are eligible for Married.</h2> : <h2>Your are not eligible for Married</h2>
 //       }
 //     </>
 //   )
@@ -128,9 +130,9 @@ export default Simple
 
 // --------  🟡 Example 6.1: Age Check taking input from the user ---------
 
-// import React, { useState } from "react";
+// import { useState } from "react";
 
-// // const Simple = () => {
+// const Simple = () => {
 //   const [age, setAge] = useState("");
 
 //   const adult = age > 18;
@@ -142,7 +144,7 @@ export default Simple
 //         placeholder="Enter your age..."
 //         value={age}
 //         onChange={(e) => setAge(e.target.value)}
-//         className="border-2 rounded px-1 border-red-100"
+//         className="border-1 border-red-800 rounded px-1"
 //       />
 //       <h4>
 //         {age === ""
@@ -159,23 +161,25 @@ export default Simple
 
 // -------------  🟡 Example 7: Empty List Check   ----------------
 
-// import React from "react";
 // function Simple() {
-//   // const fruits = ["Grapes", "Banana", "Orange", "Papaya"];
-//   const fruits = [];
+
+//   // const fruits = [];
+//   const fruits = ["Grapes", "Banana", "Orange", "Papaya"];
+
 //   return (
 //     <>
-//       {fruits.length == 0 ? (
-//         <h1>
-//           No fruits available 🍽️ <br /> Please enter fruits...
-//         </h1>
-//       ) : (
-//         <ul>
-//           {fruits.map((item, index) => (
-//             <li key={index}>{item}</li>
-//           ))}
-//         </ul>
-//       )}
+//       {
+//         fruits.length == 0 ? (<h2> No fruits available 🍽️ <br /> Please enter fruits... </h2>
+//         ) : (
+//           <ul>
+//             {
+//               fruits.map((item, index) => (
+//                 <li key={index}>{item}</li>
+//               ))
+//             }
+//           </ul>
+//         )
+//       }
 //     </>
 //   );
 // }
@@ -183,17 +187,17 @@ export default Simple
 
 // --------------  🟡 Example 8: Show/Hide Password  ----------------
 
+
+
 // import { useState } from "react";
 
 // function Simple() {
-//   const [show, setShow] = useState(false);
+//   const [show, setShow] = useState();
 
 //   return (
 //     <>
 //       <input type={show ? "text" : "password"} placeholder="Enter password" />
-//       <button onClick={() => setShow(!show)}>
-//         {show ? "Hide password" : "Show Password"}
-//       </button>
+//       <button onClick={() => setShow(!show)}> {show ? "Hide " : "Show "} </button>
 //     </>
 //   );
 // }
@@ -210,15 +214,14 @@ export default Simple
 //       <input
 //         type={show ? "password" : "show"}
 //         placeholder="Enter your password..."
-//         className="border-2 rounded-bl-sm rounded-tl-sm px-0.5"
+//         className="border-5 border-success rounded-left px-3"
 //       />
 //       <button
 //         onClick={() => setHide(!show)}
-//         className="bg-gray-500 text-white border-2 border-gray-800 px-1 border-l-0 "
+//         className="bg-dark text-white border-5 border-warning px-2 "
 //         style={{ backgroundColor: "gray" }}
 //       >
 //         {/* {show ? " Hide" : "Show"} */}
-//         {/* {show ? "👁️‍🗨️" : "👁️"} */}
 //         {/* {show ? "🙈" : "👁️"} */}
 //         <span className="material-icons" style={{ fontSize: "18px" }}>
 //           {show ? "visibility_off" : "visibility"}
@@ -232,11 +235,32 @@ export default Simple
 
 // --------------  🟡 Example 8: Check even odd number  ----------------
 
+
+// function Simple() {
+
+//   const [num, setNum] = useState("")
+
+//   return (
+//     <>
+//       <h1>Check odd even</h1>
+//       <input type="number" placeholder="Enter number..."
+//         onChange={(e) => setNum(e.target.value)}
+//       />
+//       {
+//         num === "" ? <h4 className="text-info">Enter any number</h4> : num % 2 == 0 ? <h3 className="text-success">Even</h3> : <h3 className="text-success">Odd</h3>
+//       }
+//     </>
+//   )
+// }
+// export default Simple
+
+//------------------------------
+
 // import React, { useState } from "react";
 // function Simple() {
 //   const [num, setNum] = useState("");
 
-//   // console.log(num);
+//   console.log(num);
 
 //   return (
 //     <>
@@ -253,8 +277,8 @@ export default Simple
 //         {num === ""
 //           ? "Enter any number"
 //           : Number(num) % 2 === 0
-//           ? "Even Number"
-//           : "Odd Number"}
+//             ? "Even Number"
+//             : "Odd Number"}
 //       </h3>
 //     </>
 //   );
@@ -292,10 +316,36 @@ export default Simple
 
 // ----------- 🔴 Example 4: Theme Switcher----------------
 
+function Simple() {
+  const [theme, setTheme] = useState()
+  const nadeem = {
+    style: {
+      height: "300px",
+      width: "300px",
+      border: "3px solid red",
+      background: theme ? "black" : "white",
+      color: theme ? "white" : "black"
+    }
+  }
+
+  return (
+    <>
+      <div style={nadeem.style}>
+        <button onClick={() => setTheme(!theme)}>{theme ? "☀" : "🌚"}</button>
+        <h6>Voh zubaan jis ko sab kun ki kunji kehein
+          Uski nafiz hukumut pe laakhon salam</h6>
+      </div>
+    </>
+  )
+}
+
+export default Simple
+//------------------------------
+
 // import { useState } from "react";
 
 // function Simple() {
-//   const [dark, SetDark] = useState(true);
+//   const [dark, SetDark] = useState();
 //   const nadeem = {
 //     theming: {
 //       height: "200px",
@@ -314,13 +364,14 @@ export default Simple
 //   return (
 //     <>
 //       <div style={nadeem.theming}>
-//         <p style={{ color: dark ? "white" : "black" }}>
-//           {dark ? "Light Theme 🌞" : "Dark Theme 🌙"}
-//         </p>
-//         <button onClick={() => SetDark(!dark)} style={nadeem.btn}>
+//         <button onClick={() => SetDark(!dark)} >
 //           {/* Toggle theme */}
-//           {dark ? "Dark Theme 🌙" : "Light Theme 🌞"}
+//           {/* {dark ? "Light Theme 🌞" : "Dark Theme  🌙"} */}
+//           click
 //         </button>
+//         {/* <p style={{ color: dark ? "white" : "black" }}>
+//           {dark ? "Light Theme 🌞" : "Dark Theme 🌙"}
+//         </p> */}
 //       </div>
 //     </>
 //   );
