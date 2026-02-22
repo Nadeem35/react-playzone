@@ -49,9 +49,9 @@ function App() {
         {/* ----  Call Array data into table using map()  ----- */}
         {/* <Table1 /> */}
         {/* -----------  Conditional rendering  ------------ */}
-        <hr />
+        {/* <hr />
         <Simple></Simple>
-        <hr />
+        <hr /> */}
         {/* -------- Passing props -------- */}
         {/* <hr />
         <Parent1></Parent1>
@@ -108,8 +108,8 @@ function App() {
       </center>
 
       <hr />
-      {/* <AppRoute /> */}
       {/* <LinkRoute /> */}
+      <AppRoute />
       <hr />
     </>
   );

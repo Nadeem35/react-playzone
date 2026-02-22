@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Home";
 import Service from "./Service";
@@ -53,7 +52,8 @@ const AppRoute = () => {
           {/* ------ Landing when page not found at any specific URL -------- */}
           <Route path="/*" element={<PageNotFound />} />
           {/* --------  If page not found then land on any specific page  -------- */}
-          {/* <Route path="/*" element={<Navigate to="/" />} /> */}
+          <Route path="/*" element={<Navigate to="/" />} />
+
         </Routes>
       </BrowserRouter>
     </>

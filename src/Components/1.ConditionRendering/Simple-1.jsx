@@ -316,30 +316,30 @@ import { useState } from "react"
 
 // ----------- 🔴 Example 4: Theme Switcher----------------
 
-function Simple() {
-  const [theme, setTheme] = useState()
-  const nadeem = {
-    style: {
-      height: "300px",
-      width: "300px",
-      border: "3px solid red",
-      background: theme ? "black" : "white",
-      color: theme ? "white" : "black"
-    }
-  }
+// function Simple() {
+//   const [theme, setTheme] = useState()
+//   const css = {
+//     box: {
+//       height: "200px",
+//       width: "200px",
+//       border: "2px solid red",
+//       backgroundColor: theme ? "gray" : "pink",
+//       // color: theme ? "white" : "black",
+//       color: theme ? "red" : "black"
+//     }
+//   }
 
-  return (
-    <>
-      <div style={nadeem.style}>
-        <button onClick={() => setTheme(!theme)}>{theme ? "☀" : "🌚"}</button>
-        <h6>Voh zubaan jis ko sab kun ki kunji kehein
-          Uski nafiz hukumut pe laakhon salam</h6>
-      </div>
-    </>
-  )
-}
+//   return (
+//     <>
+//       <button onClick={() => setTheme(!theme)}>{theme ? "⬛" : "🔲"}</button>
+//       <div style={css.box}>
+//         <p>Lorem ipsum dolor sit amet.</p>
+//       </div>
+//     </>
+//   )
 
-export default Simple
+// }
+// export default Simple
 //------------------------------
 
 // import { useState } from "react";
@@ -366,8 +366,8 @@ export default Simple
 //       <div style={nadeem.theming}>
 //         <button onClick={() => SetDark(!dark)} >
 //           {/* Toggle theme */}
-//           {/* {dark ? "Light Theme 🌞" : "Dark Theme  🌙"} */}
-//           click
+//           {dark ? " 🌞" : "  🌙"}
+
 //         </button>
 //         {/* <p style={{ color: dark ? "white" : "black" }}>
 //           {dark ? "Light Theme 🌞" : "Dark Theme 🌙"}
@@ -403,35 +403,36 @@ export default Simple
 // export default Simple;
 
 // -------  Example 6: API Data Rendering (Loading/Error/Success) -------
-// import React, { useState, useEffect } from "react";
 
-// function Simple() {
-//   const [data, setData] = useState(null);
-//   const [loading, setLoading] = useState(true);
-//   const [error, setError] = useState(false);
+import { useEffect } from "react";
 
-//   useEffect(() => {
-//     fetch("https://jsonplaceholder.typicode.com/posts/16")
-//       .then((res) => res.json())
-//       .then((json) => {
-//         setData(json);
-//         setLoading(false);
-//       })
-//       .catch(() => {
-//         setError(true);
-//         setLoading(false);
-//       });
-//   }, []);
+function Simple() {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
-//   if (loading) return <p>Loading... ⏳</p>;
-//   if (error) return <p>Error fetching data ❌</p>;
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/posts/16")
+      .then((res) => res.json())
+      .then((json) => {
+        setData(json);
+        setLoading(false);
+      })
+      .catch(() => {
+        setError(true);
+        setLoading(false);
+      });
+  }, []);
 
-//   return (
-//     <div>
-//       <h2>{data.title}</h2>
-//       <p>{data.body}</p>
-//     </div>
-//   );
-// }
+  if (loading) return <p>Loading... ⏳</p>;
+  if (error) return <p>Error fetching API data ❌</p>;
 
-// export default Simple;
+  return (
+    <div>
+      <h2>{data.title}</h2>
+      <p>{data.body}</p>
+    </div>
+  );
+}
+
+export default Simple;
