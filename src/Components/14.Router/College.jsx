@@ -19,27 +19,30 @@ const College = () => {
               width: "300px",
               margin: "20px 0px",
               border: "2px solid #ff1414ff",
-              backgroundColor: "#aeaeaeff",
+              backgroundColor: "rgb(110, 107, 107)",
               borderRadius: "50px",
               textDecoration: "line-through",
               padding: "10px",
               color: "#fff",
             }}
           >
-            <NavLink style={{ textDecoration: "none", color: "#fff" }} to="">
+            <NavLink
+              to=""
+              style={{ textDecoration: "none", color: "#fff" }}
+            >
               {" "}
               {/* ---- make this root empty for auto select --- */}
               College1
             </NavLink>
             <NavLink
-              style={{ textDecoration: "none", color: "#fff" }}
               to="college2"
+              style={{ textDecoration: "none", color: "#fff" }}
             >
               College2
             </NavLink>
             <NavLink
-              style={{ textDecoration: "none", color: "#fff" }}
               to="college3"
+              style={{ textDecoration: "none", color: "#fff" }}
             >
               College3
             </NavLink>
