@@ -33,6 +33,7 @@ function Table1() {
             <th className="border-2 border-amber-300 ">Salary</th>
           </tr>
         </thead>
+
         <tbody>
           {employees.map((item) => (
             <tr>

@@ -50,7 +50,7 @@ function App() {
         <MapMethod></MapMethod>
         <hr /> */}
         {/* ----  Call Array data into table using map()  ----- */}
-        {/* <Table1 /> */}
+        <Table1 />
         {/* -----------  Conditional rendering  ------------ */}
         {/* <hr />
         <Simple></Simple>
@@ -112,7 +112,7 @@ function App() {
 
       <hr />
       {/* <LinkRoute /> */}
-      <AppRoute />
+      {/* <AppRoute /> */}
       <hr />
     </>
   );
