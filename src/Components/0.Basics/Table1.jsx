@@ -24,7 +24,7 @@ function Table1() {
       <h1 className="text-4xl text-amber-800">Same the file data</h1>
 
       <table className="border-2">
-        <caption>Table-2</caption>
+        <caption className="text-center caption-top fw-bold text-danger">Table-2</caption>
         <thead>
           <tr className="px-5">
             <th className="border-2 border-amber-300 ">ID</th>
