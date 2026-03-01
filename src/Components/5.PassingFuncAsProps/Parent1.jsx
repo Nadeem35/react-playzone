@@ -8,7 +8,7 @@ function Parent1() {
 
   return (
     <>
-      <h1>This Parents greeting !</h1>
+      <h1>This Parent alert in child componet !</h1>
       <Child1 onGreet={showAlert}></Child1>
     </>
   );
