@@ -50,15 +50,15 @@ function App() {
         <MapMethod></MapMethod>
         <hr /> */}
         {/* ----  Call Array data into table using map()  ----- */}
-        <Table1 />
+        {/* <Table1 /> */}
         {/* -----------  Conditional rendering  ------------ */}
         {/* <hr />
         <Simple></Simple>
         <hr /> */}
         {/* -------- Passing props -------- */}
-        {/* <hr />
+        <hr />
         <Parent1></Parent1>
-        <hr /> */}
+        <hr />
         {/* -------- Passing children -------- */}
         {/* <hr />
         <Parent />

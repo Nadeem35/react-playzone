@@ -35,3 +35,4 @@ const Table2 = ({ arrProp }) => {
 };
 
 export default Table2;
+
