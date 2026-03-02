@@ -23,8 +23,7 @@ import AppRoute from "./Components/14.Router/AppRoute";
 import LinkRoute from "./Components/14.Router/LinkRoute/LinkRoute";
 import Table1 from "./Components/0.Basics/Table1.jsx";
 
-// IMPORT BOOTSTRAP JS - THIS FIXES THE HAMBURGER MENU
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 
 function App() {
   return (
@@ -56,9 +55,9 @@ function App() {
         <Simple></Simple>
         <hr /> */}
         {/* -------- Passing props -------- */}
-        <hr />
+        {/* <hr />
         <Parent1></Parent1>
-        <hr />
+        <hr /> */}
         {/* -------- Passing children -------- */}
         {/* <hr />
         <Parent />
@@ -112,7 +111,7 @@ function App() {
 
       <hr />
       {/* <LinkRoute /> */}
-      {/* <AppRoute /> */}
+      <AppRoute />
       <hr />
     </>
   );
