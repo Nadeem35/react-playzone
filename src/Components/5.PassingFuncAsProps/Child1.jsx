@@ -1,12 +1,15 @@
 import React from "react";
 
-const Child1 = ({ onGreet }) => {
+function Child1({ prop }) {
+
   return (
     <>
-      <button onClick={onGreet}>Say Hello !</button>
+      <h2>Im child content</h2>
+      <button onClick={prop}>Click child</button>
     </>
-  );
-};
+  )
+
+}
 
 export default Child1;
 

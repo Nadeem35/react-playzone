@@ -55,9 +55,9 @@ function App() {
         <Simple></Simple>
         <hr /> */}
         {/* -------- Passing props -------- */}
-        {/* <hr />
+        <hr />
         <Parent1></Parent1>
-        <hr /> */}
+        <hr />
         {/* -------- Passing children -------- */}
         {/* <hr />
         <Parent />
@@ -109,10 +109,10 @@ function App() {
         {/* ------------  Router  ------------ */}
       </center>
 
-      <hr />
+      {/* <hr /> */}
       {/* <LinkRoute /> */}
-      <AppRoute />
-      <hr />
+      {/* <AppRoute /> */}
+      {/* <hr /> */}
     </>
   );
 }

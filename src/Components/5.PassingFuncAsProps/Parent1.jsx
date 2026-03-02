@@ -1,20 +1,21 @@
 import React from "react";
-import Child1 from "./Child1";
+import Child1 from "../5.PassingFuncAsProps/Child1"
+
 
 function Parent1() {
-  const showAlert = () => {
-    alert("This is alert message from the Parents");
-  };
+
+  function ShowMsg() {
+    alert("Happy Ramazan ! 🎊✨")
+  }
 
   return (
     <>
-      <h1>This Parent alert in child componet !</h1>
-      <Child1 onGreet={showAlert}></Child1>
+      <h1>I m parent function</h1>
+      <Child1 prop={ShowMsg}></Child1>
     </>
-  );
+  )
 }
-
-export default Parent1;
+export default Parent1
 
 // -==================   🔹 2.  ================
 // 🔹 2. Passing Arguments to the Function
