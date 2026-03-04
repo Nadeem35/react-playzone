@@ -4,14 +4,14 @@ import Child1 from "../5.PassingFuncAsProps/Child1"
 
 function Parent1() {
 
-  function ShowMsg() {
-    alert("Happy Ramazan ! 🎊✨")
+  const Msg = () => {
+    alert("Parent component Alert !")
   }
 
   return (
     <>
-      <h1>I m parent function</h1>
-      <Child1 prop={ShowMsg}></Child1>
+      <h1>Im parent component</h1>
+      <Child1 prop={Msg}></Child1>
     </>
   )
 }

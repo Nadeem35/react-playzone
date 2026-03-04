@@ -1,17 +1,14 @@
-import React from "react";
-
 function Child1({ prop }) {
 
   return (
     <>
-      <h2>Im child content</h2>
-      <button onClick={prop}>Click child</button>
+      <h2>We are child component</h2>
+      <button onClick={prop}>Child Click button</button>
     </>
   )
-
 }
 
-export default Child1;
+export default Child1
 
 // ==================   🔹 2.  =================
 
