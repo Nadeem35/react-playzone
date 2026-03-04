@@ -1,43 +1,44 @@
-import React from "react";
-import Child1 from "../5.PassingFuncAsProps/Child1"
+// import React from "react";
+// import Child1 from "../5.PassingFuncAsProps/Child1"
 
 
-function Parent1() {
+// function Parent1() {
 
-  const Msg = () => {
-    alert("Parent component Alert !")
-  }
+//   const Msg = () => {
+//     alert("Parent component Alert !")
+//   }
 
-  return (
-    <>
-      <h1>Im parent component</h1>
-      <Child1 prop={Msg}></Child1>
-    </>
-  )
-}
-export default Parent1
+//   return (
+//     <>
+//       <h1>Im parent component</h1>
+//       <Child1 prop={Msg}></Child1>
+//     </>
+//   )
+// }
+// export default Parent1
 
 // -==================   🔹 2.  ================
 // 🔹 2. Passing Arguments to the Function
 // Sometimes, you want the child to pass data back to the parent.
 
 // // Parent.js
-// import React from "react";
-// import Child1 from "./Child1";
+import React from "react";
+import Child1 from "./Child1";
 
-// const Parent1 = () => {
-//   const showAlert = (msg) => {
-//     alert(" Parent Received : " + msg);
-//   };
+const Parent1 = () => {
 
-//   return (
-//     <div>
-//       <Child1 greeting={showAlert}></Child1>
-//     </div>
-//   );
-// };
+  const showAlert = (msg) => {
+    alert(" Parent Received : " + msg);
+  };
 
-// export default Parent1;
+  return (
+    <div>
+      <Child1 greeting={showAlert}></Child1>
+    </div>
+  );
+};
+
+export default Parent1;
 
 
 // =================  🔹 3.   =================

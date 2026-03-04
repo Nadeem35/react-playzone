@@ -1,32 +1,32 @@
-function Child1({ prop }) {
+// function Child1({ prop }) {
 
-  return (
-    <>
-      <h2>We are child component</h2>
-      <button onClick={prop}>Child Click button</button>
-    </>
-  )
-}
+//   return (
+//     <>
+//       <h2>We are child component</h2>
+//       <button onClick={prop}>Child Click button</button>
+//     </>
+//   )
+// }
 
-export default Child1
+// export default Child1
 
 // ==================   🔹 2.  =================
 
-// // Child.js
+// Child.js
 
-// import React from "react";
+import React from "react";
 
-// const Child1 = ({ greeting }) => {
-//   return (
-//     <div>
-//       <button onClick={() => greeting("I am data from Child!")}>
-//         Send Data to Parent
-//       </button>
-//     </div>
-//   );
-// };
+const Child1 = ({ greeting }) => {
+  return (
+    <div>
+      <button onClick={() => greeting("I am data from Child!")}>
+        Send Data to Parent
+      </button>
+    </div>
+  );
+};
 
-// export default Child1;
+export default Child1;
 
 // =================  🔹 3.   =================
 
