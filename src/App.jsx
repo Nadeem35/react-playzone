@@ -55,13 +55,13 @@ function App() {
         <Simple></Simple>
         <hr /> */}
         {/* -------- Passing props -------- */}
-        <hr />
-        <Parent1></Parent1>
-        <hr />
-        {/* -------- Passing children -------- */}
         {/* <hr />
-        <Parent />
+        <Parent1></Parent1>
         <hr /> */}
+        {/* -------- Passing children -------- */}
+        <hr />
+        <Parent />
+        <hr />
         {/* -------- Passing children -------- */}
         {/* <hr />
         <ToggleState />
