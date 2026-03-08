@@ -22,6 +22,7 @@ import Memo from "./Components/12.UseMemo/Memo";
 import AppRoute from "./Components/14.Router/AppRoute";
 import LinkRoute from "./Components/14.Router/LinkRoute/LinkRoute";
 import Table1 from "./Components/0.Basics/Table1.jsx";
+import RoutPage from "./Components/15.JWT/RoutPage.jsx";
 
 
 
@@ -59,9 +60,9 @@ function App() {
         <Parent1></Parent1>
         <hr /> */}
         {/* -------- Passing children -------- */}
-        <hr />
+        {/* <hr />⛳
         <Parent />
-        <hr />
+        <hr /> */}
         {/* -------- Passing children -------- */}
         {/* <hr />
         <ToggleState />
@@ -113,6 +114,8 @@ function App() {
       {/* <LinkRoute /> */}
       {/* <AppRoute /> */}
       {/* <hr /> */}
+      {/* -----------  RoutPage  ---------- */}
+      <RoutPage />
     </>
   );
 }
