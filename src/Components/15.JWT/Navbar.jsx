@@ -1,30 +1,21 @@
-import React from 'react'
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <div>
-      <ul>
+      <ul className='flex'>
         <li>
-          <Link to="/home">
-            Home
-          </Link>
+          <Link to="/home"> Home </Link >
         </li >
-        {/* <li>
-          <Link to="/About">
-            About
-          </Link>
-        </li> */}
-        {/* <li>
-          <Link to="/Service">
-            Service
-          </Link>
-        </li> */}
-        {/* <li>
-          <Link to="/Contact">
-            Contact
-          </Link>
-        </li> */}
+        <li>
+          {/* <Link to="/About"> About </Link> */}
+        </li>
+        <li>
+          {/* <Link to="/Service"> Service </Link> */}
+        </li>
+        <li>
+          {/* <Link to="/Contact"> Contact </Link> */}
+        </li>
       </ul>
     </div >
   )
