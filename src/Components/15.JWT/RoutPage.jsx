@@ -9,7 +9,9 @@ const RoutPage = () => {
     <div>
       <Navbar />
 
-
+      {/* <Routes>
+        <Route path='/' />
+      </Routes> */}
 
     </div >
   )
