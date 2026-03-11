@@ -5,16 +5,16 @@ const Navbar = () => {
     <div>
       <ul className='flex'>
         <li>
-          <Link to="/home"> Home </Link >
+          Home
         </li >
         <li>
-          {/* <Link to="/About"> About </Link> */}
+          About
         </li>
         <li>
-          {/* <Link to="/Service"> Service </Link> */}
+          Service
         </li>
         <li>
-          {/* <Link to="/Contact"> Contact </Link> */}
+          Contact
         </li>
       </ul>
     </div >

@@ -9,9 +9,7 @@ const RoutPage = () => {
     <div>
       <Navbar />
 
-      <Routes>
-        <Route path="/home" element={<Home />} />
-      </Routes>
+
 
     </div >
   )
