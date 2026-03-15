@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 import Home from './Home'
 import About from '../15.JWT/About'
 import Service from '../15.JWT/Service'
+import Contact from './Contact'
 
 const RoutPage = () => {
   return (
@@ -14,6 +15,7 @@ const RoutPage = () => {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/service' element={<Service />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
       </BrowserRouter>
 
