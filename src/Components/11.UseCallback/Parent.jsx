@@ -27,11 +27,10 @@ unnecessary child re-renders aur performance issues avoid hote hain, especially 
 
 // export default Parent;
 
-
+//------------------------------------
 
 function Parent() {
   const [count, setCount] = useState(0);
-  // const [down, setDown] = useState(count)
 
   function increment() {
     setCount(count + 1)
@@ -44,10 +43,8 @@ function Parent() {
   return (
     <>
       <h1>{count}</h1>
-      <button onClick={increment}>+1</button>
-
-      {/* <h1>{down}</h1> */}
-      <button onClick={decrement}>-1</button>
+      <button onClick={increment}>⬆🔼</button>
+      <button onClick={decrement}>⬇🔽</button>
     </>
   )
 }
