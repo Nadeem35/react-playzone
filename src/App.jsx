@@ -60,15 +60,15 @@ function App() {
         <Parent1></Parent1>
         <hr /> */}
         {/* -------- Passing children -------- */}
-        <hr />⛳
+        {/* <hr />⛳
         <Parent />
-        <hr />
+        <hr /> */}
         {/* -------- Passing children -------- */}
-        {/* <hr />
+        <hr />
         <ToggleState />
         <br />
         <Form></Form>
-        <hr /> */}
+        <hr />
         {/* -------- Passing function as props -------- */}
         {/* <hr />
         <Parent1></Parent1>
