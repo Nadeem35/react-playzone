@@ -1,6 +1,9 @@
 // import React from "react";
 // import Child1 from "../5.PassingFuncAsProps/Child1"
 
+import { useState } from "react"
+import Child1 from "./Child1";
+
 
 // function Parent1() {
 
@@ -43,24 +46,24 @@
 
 // ------------------
 
-import React from "react";
-import Child1 from "./Child1";
+// import React from "react";
+// import Child1 from "./Child1";
 
-function Parent1() {
+// function Parent1() {
 
-  function ShowMsg() {
-    alert("Im alert message")
-  }
+//   function ShowMsg() {
+//     alert("Im alert message of Parent inside the Child")
+//   }
 
-  return (
-    <>
-      <h1>adasdma d</h1>
-      <Child1 props={ShowMsg} />
-    </>
-  )
-}
+//   return (
+//     <>
+//       <h1>This is Parents component content</h1>
+//       <Child1 props={ShowMsg} />
+//     </>
+//   )
+// }
 
-export default Parent1
+// export default Parent1
 
 
 // =================  🔹 3.   =================
@@ -84,4 +87,20 @@ export default Parent1
 // }
 
 // export default Parent1;
+
+//--------------------------
+
+function Parent1() {
+
+  const [name, setName] = useState("Saifi");
+
+  return (
+    <>
+      <h3>My name is : {name}</h3>
+      <Child1 updatename={setName} />
+    </>
+  )
+}
+
+export default Parent1
 
