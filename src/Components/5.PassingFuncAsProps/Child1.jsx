@@ -64,7 +64,7 @@ function Child1({ updatename }) {
 
   return (
     <>
-      <button onClick={() => updatename("Topper")}> Previos</button> {"    __________     "}
+      <button onClick={() => updatename("Topper")}> Previos</button> {"         "}
       <button onClick={() => updatename("Developer")}> Now</button>
     </>
   )

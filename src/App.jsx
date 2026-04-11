@@ -70,13 +70,13 @@ function App() {
         <Form></Form>
         <hr /> */}
         {/* -------- Passing function as props -------- */}
-        <hr />
-        <Parent1></Parent1>
-        <hr />
-        {/* --------------  PropDrilling  -------------- */}
         {/* <hr />
-        <Parent />
+        <Parent1></Parent1>
         <hr /> */}
+        {/* --------------  PropDrilling  -------------- */}
+        <hr />
+        <Parent />
+        <hr />
         {/* ------------   ContextAPI   --------------- */}
         {/* <hr />
         <h3>ContextAPI</h3>
