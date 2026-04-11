@@ -28,18 +28,33 @@
 
 // export default Child1;
 
+// ------------------
+
+function Child1({ props }) {
+
+  return (
+    <>
+      <h1>I am Child Component</h1>
+      <button onClick={props}>Submit</button>
+    </>
+  )
+}
+
+export default Child1
+
+
 // =================  🔹 3.   =================
 
 
-// Child.js
-function Child1({ onUpdate }) {
-  return (
-    <>
-      <button onClick={() => onUpdate("Nadeem")}>Send Name</button>
-      <button onClick={() => onUpdate("Uzair")}>Send Another Name</button>
-    </>
-  );
-}
+// // Child.js
+// function Child1({ onUpdate }) {
+//   return (
+//     <>
+//       <button onClick={() => onUpdate("Nadeem")}>Send Name</button>
+//       <button onClick={() => onUpdate("Uzair")}>Send Another Name</button>
+//     </>
+//   );
+// }
 
-export default Child1;
+// export default Child1;
 

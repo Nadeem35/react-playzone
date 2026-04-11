@@ -41,26 +41,47 @@
 
 // export default Parent1;
 
+// ------------------
 
-// =================  🔹 3.   =================
-
-// 🔹 3. Using State + Function Props
-// Parent wants to update its state based on child actions
-
-// Parent.js
-import { useState } from "react";
+import React from "react";
 import Child1 from "./Child1";
 
 function Parent1() {
-  const [name, setName] = useState("Saifi");
+
+  function ShowMsg() {
+    alert("Im alert message")
+  }
 
   return (
-    <div>
-      <h3>Selected Name: {name}</h3>
-      <Child1 onUpdate={setName} />
-    </div>
-  );
+    <>
+      <h1>adasdma d</h1>
+      <Child1 props={ShowMsg} />
+    </>
+  )
 }
 
-export default Parent1;
+export default Parent1
+
+
+// =================  🔹 3.   =================
+
+// // 🔹 3. Using State + Function Props
+// // Parent wants to update its state based on child actions
+
+// // Parent.js
+// import { useState } from "react";
+// import Child1 from "./Child1";
+
+// function Parent1() {
+//   const [name, setName] = useState("Saifi");
+
+//   return (
+//     <div>
+//       <h3>Selected Name: {name}</h3>
+//       <Child1 onUpdate={setName} />
+//     </div>
+//   );
+// }
+
+// export default Parent1;
 
