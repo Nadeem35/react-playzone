@@ -92,7 +92,7 @@ import Child1 from "./Child1";
 
 function Parent1() {
 
-  const [name, setName] = useState("Saifi");
+  const [name, setName] = useState("Student");
 
   return (
     <>
