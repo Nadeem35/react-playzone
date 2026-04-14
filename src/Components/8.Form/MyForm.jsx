@@ -1,7 +1,6 @@
 // //✅ Isme input hamesha React state ke under control hai, isliye ise Controlled Form kehte hain.
 // // 1. Controlled Form
 
-import { useState } from "react"
 
 // import { useState } from "react";
 
@@ -30,27 +29,33 @@ import { useState } from "react"
 
 // export default MyForm;
 
+//-----------------------
+
+import { useState } from "react"
 
 function MyForm() {
-
   const [name, setName] = useState("")
 
-  function Handle() {
-    alert("Submitted Data" + setName{()=> e.target.value())
+  const Handle = (e) => {
+    e.preventDefault()
+    alert(`Submitted Data: ${name}`)
   }
 
   return (
     <>
-      <input type={name} onChange={e.target.value}
-        placeholder="Enter something..."
-      />
-      <button onClick={Handle}>Submit</button>
+      <form action="" onSubmit={Handle}>
 
+        <input type={name} onChange={(e) => setName(e.target.value)}
+          placeholder="Enter something..."
+        />
+        <button type="submit">Submit</button>
+      </form>
     </>
   )
 }
 
 export default MyForm
+
 
 // // // --------------------  2. Uncontrolled Form -------------------
 
