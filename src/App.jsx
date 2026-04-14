@@ -75,19 +75,19 @@ function App() {
         <hr /> */}
         {/* --------------  PropDrilling  -------------- */}
         <hr />
-        <Parent />
+        {/* <Parent /> */}
         <hr />
         {/* ------------   ContextAPI   --------------- */}
-        {/* <hr />
-        <h3>ContextAPI</h3>
-        <Parent />
-        <hr /> */}
+        <hr />
+        {/* <h3>ContextAPI</h3> */}
+        {/* <Parent /> */}
+        <hr />
         {/* ----------- React Form   ------------ */}
-        {/* <hr />
+        <hr />
         <h3>React Form</h3>
         <p>Controlled vs UnControlled Form</p>
         <MyForm></MyForm>
-        <hr /> */}
+        <hr />
         {/* --------------  useRef uses  -------------- */}
         {/* <hr />
         <h3>Use of useRef</h3>

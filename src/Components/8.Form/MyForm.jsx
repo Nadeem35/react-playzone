@@ -1,6 +1,8 @@
 // //✅ Isme input hamesha React state ke under control hai, isliye ise Controlled Form kehte hain.
 // // 1. Controlled Form
 
+import { useState } from "react"
+
 // import { useState } from "react";
 
 // const MyForm = () => {
@@ -28,27 +30,49 @@
 
 // export default MyForm;
 
-// // // --------------------  2. Uncontrolled Form -------------------
 
-import { useRef } from "react";
 function MyForm() {
-  const nameRef = useRef();
 
-  const dataSubmit = (e) => {
-    // onSubmit={dataSubmit} me by default form refresh ho jata hai.
-    // Isliye hamesha e.preventDefault() use karna chahiye.
-    e.preventDefault();
+  const [name, setName] = useState("")
 
-    alert(`Data Submitted : ${nameRef.current.value}`);
-  };
+  function Handle() {
+    alert("Submitted Data" + setName{()=> e.target.value())
+  }
+
   return (
     <>
-      <form onSubmit={dataSubmit}>
-        <input type="text" placeholder="Enter text" ref={nameRef} />
-        <button type="submit">Submit</button>
-      </form>
+      <input type={name} onChange={e.target.value}
+        placeholder="Enter something..."
+      />
+      <button onClick={Handle}>Submit</button>
+
     </>
-  );
+  )
 }
 
-export default MyForm;
+export default MyForm
+
+// // // --------------------  2. Uncontrolled Form -------------------
+
+// import { useRef } from "react";
+// function MyForm() {
+//   const nameRef = useRef();
+
+//   const dataSubmit = (e) => {
+//     // onSubmit={dataSubmit} me by default form refresh ho jata hai.
+//     // Isliye hamesha e.preventDefault() use karna chahiye.
+//     e.preventDefault();
+
+//     alert(`Data Submitted : ${nameRef.current.value}`);
+//   };
+//   return (
+//     <>
+//       <form onSubmit={dataSubmit}>
+//         <input type="text" placeholder="Enter text" ref={nameRef} />
+//         <button type="submit">Submit</button>
+//       </form>
+//     </>
+//   );
+// }
+
+// export default MyForm;
