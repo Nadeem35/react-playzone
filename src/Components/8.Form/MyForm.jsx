@@ -30,30 +30,28 @@
 // export default MyForm;
 
 //-----------------------
-
-import { useState } from "react"
+import { useState } from "react";
 
 function MyForm() {
   const [name, setName] = useState("")
 
-  const Handle = (e) => {
+  const uploaded = (e) => {
     e.preventDefault()
-    alert(`Submitted Data: ${name}`)
+    alert(`Submitted : ${name}`)
   }
+  console.log(name)
 
   return (
     <>
-      <form action="" onSubmit={Handle}>
-
-        <input type={name} onChange={(e) => setName(e.target.value)}
-          placeholder="Enter something..."
+      <form action="" onSubmit={uploaded}>
+        <input type={name} placeholder="Enter anything..."
+          onChange={(e) => setName(e.target.value)}
         />
         <button type="submit">Submit</button>
       </form>
     </>
   )
 }
-
 export default MyForm
 
 
