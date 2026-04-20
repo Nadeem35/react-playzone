@@ -36,6 +36,7 @@ function MyForm() {
   const [name, setName] = useState("")
 
   const uploaded = (e) => {
+    // its use for the remain text inside the input field.
     e.preventDefault()
     alert(`Submitted : ${name}`)
   }
