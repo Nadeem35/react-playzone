@@ -1,6 +1,8 @@
 // //✅ Isme input hamesha React state ke under control hai, isliye ise Controlled Form kehte hain.
 // // 1. Controlled Form
 
+import { useState } from "react"
+
 
 // import { useState } from "react";
 
@@ -58,25 +60,50 @@
 
 // // // --------------------  2. Uncontrolled Form -------------------
 
-import { useRef } from "react";
+// import { useRef } from "react";
+// function MyForm() {
+//   const nameRef = useRef();
+
+//   const dataSubmit = (e) => {
+//     // onSubmit={dataSubmit} me by default form refresh ho jata hai.
+//     // Isliye hamesha e.preventDefault() use karna chahiye.
+//     e.preventDefault();
+
+//     alert(`Data Submitted : ${nameRef.current.value}`);
+//   };
+//   return (
+//     <>
+//       <form onSubmit={dataSubmit}>
+//         <input type="text" placeholder="Enter text" ref={nameRef} />
+//         <button type="submit">Submit</button>
+//       </form>
+//     </>
+//   );
+// }
+
+// export default MyForm;
+
+//------------------------------------------
+
 function MyForm() {
-  const nameRef = useRef();
+  const [name, setName] = useState("")
 
   const dataSubmit = (e) => {
-    // onSubmit={dataSubmit} me by default form refresh ho jata hai.
-    // Isliye hamesha e.preventDefault() use karna chahiye.
-    e.preventDefault();
+    e.preventDefault()
+    alert(`Submitted: ${name}`)
+  }
 
-    alert(`Data Submitted : ${nameRef.current.value}`);
-  };
   return (
     <>
-      <form onSubmit={dataSubmit}>
-        <input type="text" placeholder="Enter text" ref={nameRef} />
+      <form action="" onSubmit={dataSubmit}      >
+        <input type={name}
+          onChange={(e) => setName(e.target.value)}
+
+        />
         <button type="submit">Submit</button>
       </form>
     </>
-  );
+  )
 }
 
-export default MyForm;
+export default MyForm
