@@ -4,28 +4,28 @@ React me directly document.getElementById() use karna best practice nahi hai.
 Iske liye hum useRef use karte hai.
 */
 
-// import React, { useRef } from "react";
+import React, { useRef } from "react";
 
-// const Useref = () => {
-//   const inputRef = useRef();
+const Useref = () => {
+  const inputRef = useRef();
 
-//   const inputFocus = () => {
-//     inputRef.current.focus();
-//   };
+  const inputFocus = () => {
+    inputRef.current.focus();
+  };
 
-//   console.log(inputRef);
+  console.log(inputRef);
 
-//   return (
-//     <>
-//       <input type="text" ref={inputRef} placeholder="Enter name" />
-//       <button onClick={inputFocus}>Submit</button>
-//     </>
-//   );
-// };
+  return (
+    <>
+      <input type="text" ref={inputRef} placeholder="Enter name" />
+      <button onClick={inputFocus}>Submit</button>
+    </>
+  );
+};
 
-// export default Useref;
+export default Useref;
 
-// ------------------------
+// ---------------------------------------
 
 /*
 2. Storing Values Without Re-render
@@ -77,32 +77,32 @@ useState me value change hone par component re-render hota hai.
 // ---------------  4. Storing Timers / Intervals  -----------------
 
 /*
-Agar tum setInterval ya setTimeout use karte ho, toh 
+Agar tum setInterval ya setTimeout use karte ho, toh
 uska id store karne ke liye useRef perfect hai.
 */
 
-import { useRef, useState } from "react";
+// import { useRef, useState } from "react";
 
-function Useref() {
-  const [time, setTime] = useState(0);
-  const timeRef = useRef();
+// function Useref() {
+//   const [time, setTime] = useState(0);
+//   const timeRef = useRef();
 
-  const starTimer = () => {
-    timeRef.current = setInterval(() => {
-      setTime((prev) => prev + 1);
-    }, 1000);
-  };
+//   const starTimer = () => {
+//     timeRef.current = setInterval(() => {
+//       setTime((prev) => prev + 1);
+//     }, 1000);
+//   };
 
-  const stopTimer = () => {
-    clearInterval(timeRef.current);
-  };
+//   const stopTimer = () => {
+//     clearInterval(timeRef.current);
+//   };
 
-  return (
-    <>
-      <h2>Timer: {time}</h2>
-      <button onClick={starTimer}>Start</button>
-      <button onClick={stopTimer}>Stop</button>
-    </>
-  );
-}
-export default Useref;
+//   return (
+//     <>
+//       <h2>Timer: {time}</h2>
+//       <button onClick={starTimer}>Start</button>
+//       <button onClick={stopTimer}>Stop</button>
+//     </>
+//   );
+// }
+// export default Useref;
