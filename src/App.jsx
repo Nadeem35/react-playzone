@@ -71,11 +71,11 @@ function App() {
         <hr /> */}
         {/* -------- Passing function as props -------- */}
         {/* <hr />
-        <Parent1></Parent1>
+        // <Parent1></Parent1>
         <hr /> */}
         {/* --------------  PropDrilling  -------------- */}
         <hr />
-        {/* <Parent /> */}
+        <Parent />
         <hr />
         {/* ------------   ContextAPI   --------------- */}
         <hr />
@@ -84,14 +84,14 @@ function App() {
         <hr />
         {/* ----------- React Form   ------------ */}
         <hr />
-        {/* <h3>React Form</h3>
+        <h3>React Form</h3>
         <p>Controlled vs UnControlled Form</p>
-        <MyForm></MyForm> */}
+        <MyForm></MyForm>
         <hr />
         {/* --------------  useRef uses  -------------- */}
         <hr />
-        <h3>Use of useRef</h3>
-        <Useref />
+        {/* <h3>Use of useRef</h3> */}
+        {/* <Useref /> */}
         <hr />
         {/* --------------  useEffect   -------------- */}
         {/* <hr />
